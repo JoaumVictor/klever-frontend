@@ -96,7 +96,7 @@ const AddToken: NextPage = () => {
             </button>
           ) : (
             <button className={S.submitButton} type="submit">
-              Submit
+              Adicionar
             </button>
           )}
         </div>

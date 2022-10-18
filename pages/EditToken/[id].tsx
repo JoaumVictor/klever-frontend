@@ -137,7 +137,7 @@ const EditToken: NextPage = () => {
               onClick={() => setModalEnable(true)}
               className={S.remove}
             >
-              Remove
+              Deletar
             </button>
             <button className={S.submit} type="submit">
               Atualizar
