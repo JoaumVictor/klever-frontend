@@ -1,0 +1,37 @@
+@mixin fastDisplay($x, $y, $z) {
+  display: flex;
+  align-items: center;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+.container {
+  @include fastDisplay(flex-start, column, nowrap);
+  padding: 0 2rem;
+  background-color: #0d1117;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  width: 100vw;
+
+  main {
+    @include fastDisplay(flex-start, column, nowrap);
+    height: 100%;
+    width: 100%;
+
+    .spin {
+      margin-top: 100px;
+    }
+
+    .cardsContent {
+      @include fastDisplay(flex-start, column, nowrap);
+      margin-top: 40px;
+      height: 100%;
+      width: 50%;
+
+      .headerDescription {
+        @include fastDisplay(space-between, row, nowrap);
+        width: 50%;
+      }
+    }
+  }
+}

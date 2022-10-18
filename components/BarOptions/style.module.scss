@@ -1,0 +1,43 @@
+@mixin fastDisplay($x, $y, $z) {
+  display: flex;
+  align-items: center;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+.barOptions {
+  height: 20%;
+  width: 100%;
+
+  &.trueButtonStyle {
+    @include fastDisplay(space-evenly, row, nowrap);
+  }
+
+  &.falseButtonStyle {
+    @include fastDisplay(flex-start, row, nowrap);
+  }
+
+  .boxStarIcon {
+    @include fastDisplay(space-evenly, row, nowrap);
+    p {
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: 10px;
+      color: white;
+    }
+  }
+
+  .buttonAddToken {
+    background-color: #0d1117;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    &:hover {
+      background-color: #fff;
+      color: #0d1117;
+    }
+  }
+}

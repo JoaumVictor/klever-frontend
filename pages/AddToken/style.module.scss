@@ -1,0 +1,75 @@
+@mixin fastDisplay($a, $x, $y, $z) {
+  display: flex;
+  align-items: $a;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+.container {
+  @include fastDisplay(center, flex-start, column, nowrap);
+  background-color: #0d1117;
+  padding: 0 30%;
+  min-height: 100%;
+
+  .boxWithTitleAndButtonBack {
+    @include fastDisplay(center, space-between, row, nowrap);
+    margin: 30px auto;
+    width: 100%;
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .formAddToken {
+    @include fastDisplay(flex-start, space-evenly, column, nowrap);
+    width: 100%;
+
+    label {
+      height: 90px;
+      width: 100%;
+
+      .inputs {
+        background-color: #fff;
+        height: 40px;
+        border-radius: 12px;
+        outline: none;
+        padding-left: 10px;
+        width: 100%;
+        color: rgb(14, 14, 14);
+        font-size: 14px;
+      }
+
+      .error {
+        color: rgb(244, 39, 39);
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .boxSubmit {
+    @include fastDisplay(center, flex-end, row, nowrap);
+    width: 100%;
+    button {
+      background-color: #0d1117;
+      border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      &:hover {
+        background-color: #fff;
+        color: #0d1117;
+      }
+    }
+  }
+}

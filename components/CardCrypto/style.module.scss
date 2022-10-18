@@ -1,0 +1,39 @@
+@mixin fastDisplay($x, $y, $z) {
+  display: flex;
+  align-items: center;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+.container {
+  @include fastDisplay(space-evenly, row, nowrap);
+  width: 50%;
+  position: relative;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10%;
+    left: -10%;
+
+    .icon {
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .description {
+    @include fastDisplay(space-between, row, nowrap);
+    width: 100%;
+
+    &:hover {
+      p {
+        color: rgb(217, 66, 231);
+        cursor: pointer;
+      }
+    }
+  }
+}

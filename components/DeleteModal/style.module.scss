@@ -1,0 +1,71 @@
+@mixin fastDisplay($a, $x, $y, $z) {
+  display: flex;
+  align-items: $a;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.container {
+  @include fastDisplay(center, center, column, nowrap);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  overflow: hidden;
+
+  .box {
+    @include fastDisplay(center, center, column, nowrap);
+    background-color: rgb(38, 39, 39);
+    animation: popUp linear 0.2s;
+    padding: 50px;
+    transition: 0.5s;
+    border-radius: 18px;
+    width: 60%;
+    z-index: 10;
+
+    .options {
+      @include fastDisplay(center, space-between, row, nowrap);
+      margin-top: 20px;
+      width: 100%;
+
+      button {
+        border-radius: 8px;
+        padding: 10px;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          &.cancel {
+            color: white;
+            border: 1px solid white;
+          }
+        }
+
+        &.cancel {
+          color: grey;
+          border: 1px solid black;
+        }
+
+        &.remove {
+          color: red;
+          border: 2px solid red;
+        }
+      }
+    }
+  }
+}
