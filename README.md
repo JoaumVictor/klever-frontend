@@ -55,6 +55,7 @@ O projeto possui melhorias pendentes, e possíveis atualizações serão voltada
 
 - [ ] Adicionar uma requisição Axios que ao invés de puxar da minha API mockada, puxe de uma API externa com dados em tempo real de cryptos, favoritadas pelo usuário!
 - [ ] Desenvolver um sistema de login e tornar as rotas de home/addToken/editToken privadas pro usuário autenticado!
+- [ ] Desenvolvedor testes unitários para a aplicação!
 
 </br>
 
