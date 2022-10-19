@@ -1,4 +1,4 @@
-import { tokenT } from "../Provider/@types";
+import { tokenT } from "../provider/@types";
 import { requestTokensDefault } from "../services/api";
 
 const checkStorage = async (): Promise<tokenT[]> => {

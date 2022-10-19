@@ -1,8 +1,6 @@
 import React from "react";
-import { tokenT } from "../../src/Provider/@types";
+import { tokenT } from "../../provider/@types";
 import S from "./style.module.scss";
-import { edit } from "../../assets";
-import Image from "next/image";
 import { BiEditAlt } from "react-icons/bi";
 import Link from "next/link";
 

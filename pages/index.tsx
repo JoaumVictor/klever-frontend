@@ -6,7 +6,7 @@ import ReactLoading from "react-loading";
 import S from "../styles/Home.module.scss";
 import Header from "../components/Header/index";
 import BarOptions from "../components/BarOptions";
-import { SessionContext } from "../src/Provider/SessionContext";
+import { SessionContext } from "../provider/SessionContext";
 import CardCryto from "../components/CardCrypto";
 
 const Home: NextPage = () => {

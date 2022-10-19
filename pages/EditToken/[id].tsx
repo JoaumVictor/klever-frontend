@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { NextPage } from "next";
 import Link from "next/link";
-import { SessionContext } from "../../src/Provider/SessionContext";
+import { SessionContext } from "../../provider/SessionContext";
 import S from "./style.module.scss";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";
@@ -10,7 +10,7 @@ import * as yup from "yup";
 import Header from "../../components/Header";
 import BarOptions from "../../components/BarOptions";
 import DeleteModal from "../../components/DeleteModal";
-import { tokenT } from "../../src/Provider/@types";
+import { tokenT } from "../../provider/@types";
 import Head from "next/head";
 
 const EditToken: NextPage = () => {

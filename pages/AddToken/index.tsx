@@ -10,7 +10,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import BarOptions from "../../components/BarOptions";
 import Link from "next/link";
-import { SessionContext } from "../../src/Provider/SessionContext";
+import { SessionContext } from "../../provider/SessionContext";
 
 const AddToken: NextPage = () => {
   const { updateData, loading, allNames } = useContext(SessionContext);
