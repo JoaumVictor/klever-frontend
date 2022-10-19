@@ -2,7 +2,7 @@
 
 <div>
   <div align="left">
-    <img src="./assets/screen1.png" width="350" height="280" alt="DashboardApp" />
+    <img src="./assets/screen1.png" width="380" height="280" alt="DashboardApp" />
     <img src="./assets/screen2.png" width="350" height="280" alt="DashboardApp" />
   </div>
 </div>
@@ -11,7 +11,7 @@
 
 ## 💻 Projeto
 
-A ideia desse aplicativo é entregar a experiência de uma carteira digital que armazena dados sobre crypto moedas de uma forma simplificada!
+A ideia desse aplicativo é entregar a experiência de uma carteira digital que armazena dados sobre cripto moedas de uma forma simplificada!
 
 </br>
 
